@@ -1,6 +1,5 @@
 out/
 *.mp4
-!video/comet-dash-one-prompt.mp4
 *.wav
 *.events.json
 transcripts.tar.gz
