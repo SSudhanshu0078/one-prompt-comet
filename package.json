@@ -1,0 +1,12 @@
+{
+  "name": "one-prompt-comet",
+  "private": true,
+  "type": "module",
+  "description": "Comet Dash, a tiny neon browser game an AI agent built from one prompt, and the video about it.",
+  "scripts": {
+    "start": "node main.ts"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}

@@ -1,0 +1,6 @@
+out/
+*.mp4
+*.wav
+*.events.json
+transcripts.tar.gz
+.env

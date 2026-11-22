@@ -1,0 +1,8 @@
+[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=60,tpad=stop_mode=clone:stop_duration=0[base];
+[base][2:v]overlay=enable='lt(t,27.0)',format=yuva420p,split[clip][soft];
+[soft]gblur=sigma=28,eq=saturation=0.35,fade=t=in:st=27.0:d=0.8:alpha=1[soft];
+[clip][soft]overlay[bg];
+[1:v]format=yuva420p,setpts=PTS-STARTPTS+27.0/TB[card];
+[bg][card]overlay=eof_action=pass,
+drawbox=x=208:y=1230:w=9:h=82:color=white:t=fill:enable='gte(t,28.433)',
+drawtext=fontfile='C\:/Users/SUDHAN~1.S/AppData/Local/Temp/claude/686ca3b18a235f18/d1f17786-d404-4559-8a29-b11617694503/scratchpad/press/JetBrainsMono-Bold.ttf':text=pagz9q1s:fontsize=62:fontcolor=0x191419:x=210:y=1271-(ascent-descent)/2:enable='gte(t,28.433)'[v]

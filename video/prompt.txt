@@ -1,0 +1,1 @@
+Build a tiny neon browser game in one HTML file: steer a comet through falling asteroids, grab stars for points, and speed up every 10 seconds. Arrow keys or touch. No libraries.

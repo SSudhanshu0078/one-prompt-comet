@@ -1,0 +1,15 @@
+[0:v]split[g1][g2];
+[g1]trim=start=14:end=17,setpts=PTS-STARTPTS[hook];
+[1:v]trim=start=0:end=12.5,setpts=PTS-STARTPTS[scenes];
+[g2]trim=start=0:end=14,setpts=PTS-STARTPTS[result];
+[hook][scenes][result]concat=n=3:v=1:a=0,fps=30,
+drawtext=fontfile='C\:/Windows/Fonts/seguibl.ttf':text='ONE prompt.':fontsize=130:fontcolor=0xffe25c:borderw=10:bordercolor=0x1a0830:x=(w-text_w)/2:y=520:enable='between(t,0.12,1.45)',
+drawtext=fontfile='C\:/Windows/Fonts/seguibl.ttf':text='ZERO human code.':fontsize=96:fontcolor=white:borderw=10:bordercolor=0x1a0830:x=(w-text_w)/2:y=680:enable='between(t,0.5,1.45)',
+drawtext=fontfile='C\:/Windows/Fonts/seguibl.ttf':text='My AI agent':fontsize=110:fontcolor=white:borderw=10:bordercolor=0x1a0830:x=(w-text_w)/2:y=520:enable='between(t,1.45,3.0)',
+drawtext=fontfile='C\:/Windows/Fonts/seguibl.ttf':text='built THIS.':fontsize=140:fontcolor=0xffe25c:borderw=12:bordercolor=0x1a0830:x=(w-text_w)/2:y=660:enable='between(t,1.75,3.0)',
+drawtext=fontfile='C\:/Windows/Fonts/seguibl.ttf':text='THE RESULT':fontsize=124:fontcolor=0xffe25c:borderw=10:bordercolor=0x1a0830:x=(w-text_w)/2:y=520:enable='between(t,15.55,19.4)',
+drawtext=fontfile='C\:/Windows/Fonts/seguibl.ttf':text='a real game, runs in any browser':fontsize=54:fontcolor=white:borderw=8:bordercolor=0x1a0830:x=(w-text_w)/2:y=680:enable='between(t,15.9,19.4)',
+drawtext=fontfile='C\:/Windows/Fonts/seguibl.ttf':text='Not one line':fontsize=110:fontcolor=white:borderw=10:bordercolor=0x1a0830:x=(w-text_w)/2:y=520:enable='between(t,19.5,23.4)',
+drawtext=fontfile='C\:/Windows/Fonts/seguibl.ttf':text='written by a human.':fontsize=92:fontcolor=0xffe25c:borderw=10:bordercolor=0x1a0830:x=(w-text_w)/2:y=660:enable='between(t,19.8,23.4)',
+drawtext=fontfile='C\:/Windows/Fonts/seguibl.ttf':text='Come build on':fontsize=104:fontcolor=white:borderw=10:bordercolor=0x1a0830:x=(w-text_w)/2:y=990:enable='between(t,23.5,27.0)',
+drawtext=fontfile='C\:/Windows/Fonts/seguibl.ttf':text='make.fun':fontsize=160:fontcolor=0xffe25c:borderw=12:bordercolor=0x1a0830:x=(w-text_w)/2:y=1110:enable='between(t,23.8,27.0)'[v]
