@@ -13,6 +13,11 @@ The prompt:
 > Build a tiny neon browser game in one HTML file: steer a comet through falling asteroids, grab stars for
 > points, and speed up every 10 seconds. Arrow keys or touch. No libraries.
 
+## Watch it
+
+[▶ comet-dash-one-prompt.mp4](video/comet-dash-one-prompt.mp4): 29.5 s, 1080 x 1920, the prompt, the agent
+writing the code, and the finished game, ending on make.fun's referral end card.
+
 ## Play it
 
 Open `game/index.html` in any browser. Steer with ← → (or A / D), or touch and drag. Space or a tap starts and
@@ -22,6 +27,7 @@ restarts. `game/index.html?demo` lets the autopilot play.
 
 | Path | What it is |
 | --- | --- |
+| `video/comet-dash-one-prompt.mp4` | the finished video |
 | `game/index.html` | the game: one file, no libraries |
 | `video/capture.mjs` | records the game and the making-of scenes frame by frame in headless Chrome, piping frames to ffmpeg |
 | `video/scenes.html` | the "prompt" and "agent working" beats, drawn on a 1080 x 1920 canvas |
